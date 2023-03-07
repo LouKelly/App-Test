@@ -1,5 +1,3 @@
-#  <#Title#>
-
 import React, { useState, useEffect } from 'react';
 import {
   FlatList,
@@ -9,10 +7,11 @@ import {
   Text,
   TextInput,
   View,
-  Platform,
+  Platform
 } from 'react-native';
 import { DataStore } from 'aws-amplify';
 import { Todo } from './models';
+
 
 const Header = () => (
   <View style={styles.headerContainer}>
@@ -25,7 +24,10 @@ const AddTodoModal = ({ modalVisible, setModalVisible }) => {
   const [description, setDescription] = useState('');
 
   async function addTodo() {
-    //to be filled in a later step
+    await DataStore.save(new Todo({ name, description, isComplete: false }));
+    setModalVisible(false);
+    setName('');
+    setDescription('');
   }
 
   function closeModal() {
@@ -67,18 +69,36 @@ const TodoList = () => {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
-    //to be filled in a later step
+
+    const subscription = DataStore.observeQuery(Todo).subscribe((snapshot) => {
+      const { items, isSynced } = snapshot;
+      setTodos(items);
+    });
+
+    //unsubscribe to data updates when component is destroyed so that we don’t introduce a memory leak.
+    return function cleanup() {
+      subscription.unsubscribe();
+    }
+
   }, []);
 
   async function deleteTodo(todo) {
-    //to be filled in a later step
+    try {
+      await DataStore.delete(todo);
+    } catch (e) {
+      console.log(`Delete failed: ${e}`);
+    }
   }
 
   async function setComplete(updateValue, todo) {
-    //to be filled in a later step
+    await DataStore.save(
+      Todo.copyOf(todo, (updated) => {
+        updated.isComplete = updateValue;
+      })
+    );
   }
 
-  const renderItem = ({ item }) => (
+  const TodoItem = ({ item }) => (
     <Pressable
       onLongPress={() => {
         deleteTodo(item);
@@ -104,7 +124,7 @@ const TodoList = () => {
     <FlatList
       data={todos}
       keyExtractor={({ id }) => id}
-      renderItem={renderItem}
+      renderItem={TodoItem}
     />
   );
 };
@@ -135,7 +155,7 @@ const Home = () => {
 const styles = StyleSheet.create({
   headerContainer: {
     backgroundColor: '#4696ec',
-    paddingTop: Platform.OS === 'ios' ? 44 : 0,
+    paddingTop: Platform.OS === 'ios' ? 44 : null,
   },
   headerTitle: {
     color: '#fff',

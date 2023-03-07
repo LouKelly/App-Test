@@ -14,6 +14,17 @@
 		FA8FCE6229AE2090006E4CA5 /* TodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8FCE6129AE2090006E4CA5 /* TodoTests.swift */; };
 		FA8FCE6C29AE2090006E4CA5 /* TodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8FCE6B29AE2090006E4CA5 /* TodoUITests.swift */; };
 		FA8FCE6E29AE2090006E4CA5 /* TodoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8FCE6D29AE2090006E4CA5 /* TodoUITestsLaunchTests.swift */; };
+		FA8FCE8429AE20F9006E4CA5 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = FA8FCE7A29AE20E2006E4CA5 /* package.json */; };
+		FA8FCE8529AE20F9006E4CA5 /* src in Resources */ = {isa = PBXBuildFile; fileRef = FA8FCE7B29AE20E4006E4CA5 /* src */; };
+		FA8FCE8629AE20F9006E4CA5 /* amplify-build-config.json in Resources */ = {isa = PBXBuildFile; fileRef = FA8FCE7C29AE20E6006E4CA5 /* amplify-build-config.json */; };
+		FA8FCE8729AE20F9006E4CA5 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = FA8FCE7D29AE20E8006E4CA5 /* assets */; };
+		FA8FCE8829AE20F9006E4CA5 /* node_modules in Resources */ = {isa = PBXBuildFile; fileRef = FA8FCE7E29AE20EA006E4CA5 /* node_modules */; };
+		FA8FCE8929AE20F9006E4CA5 /* app.json in Resources */ = {isa = PBXBuildFile; fileRef = FA8FCE7F29AE20EB006E4CA5 /* app.json */; };
+		FA8FCE8A29AE20F9006E4CA5 /* amplify in Resources */ = {isa = PBXBuildFile; fileRef = FA8FCE8029AE20F0006E4CA5 /* amplify */; };
+		FA8FCE8B29AE20F9006E4CA5 /* package-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = FA8FCE8129AE20F2006E4CA5 /* package-lock.json */; };
+		FA8FCE8C29AE20F9006E4CA5 /* App.js in Resources */ = {isa = PBXBuildFile; fileRef = FA8FCE8229AE20F4006E4CA5 /* App.js */; };
+		FA8FCE8D29AE20F9006E4CA5 /* babel.config.js in Resources */ = {isa = PBXBuildFile; fileRef = FA8FCE8329AE20F7006E4CA5 /* babel.config.js */; };
+		FA8FCE8F29AFD039006E4CA5 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = FA8FCE8E29AFD037006E4CA5 /* index.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,17 @@
 		FA8FCE6729AE2090006E4CA5 /* TodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8FCE6B29AE2090006E4CA5 /* TodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoUITests.swift; sourceTree = "<group>"; };
 		FA8FCE6D29AE2090006E4CA5 /* TodoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA8FCE7A29AE20E2006E4CA5 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = package.json; path = ../package.json; sourceTree = "<group>"; };
+		FA8FCE7B29AE20E4006E4CA5 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../src; sourceTree = "<group>"; };
+		FA8FCE7C29AE20E6006E4CA5 /* amplify-build-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "amplify-build-config.json"; path = "../amplify-build-config.json"; sourceTree = "<group>"; };
+		FA8FCE7D29AE20E8006E4CA5 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../assets; sourceTree = "<group>"; };
+		FA8FCE7E29AE20EA006E4CA5 /* node_modules */ = {isa = PBXFileReference; lastKnownFileType = folder; name = node_modules; path = ../node_modules; sourceTree = "<group>"; };
+		FA8FCE7F29AE20EB006E4CA5 /* app.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = app.json; path = ../app.json; sourceTree = "<group>"; };
+		FA8FCE8029AE20F0006E4CA5 /* amplify */ = {isa = PBXFileReference; lastKnownFileType = folder; name = amplify; path = ../amplify; sourceTree = "<group>"; };
+		FA8FCE8129AE20F2006E4CA5 /* package-lock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "package-lock.json"; path = "../package-lock.json"; sourceTree = "<group>"; };
+		FA8FCE8229AE20F4006E4CA5 /* App.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = App.js; path = ../App.js; sourceTree = "<group>"; };
+		FA8FCE8329AE20F7006E4CA5 /* babel.config.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = babel.config.js; path = ../babel.config.js; sourceTree = "<group>"; };
+		FA8FCE8E29AFD037006E4CA5 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = index.js; path = ../index.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +96,17 @@
 		FA8FCE4429AE2085006E4CA5 = {
 			isa = PBXGroup;
 			children = (
+				FA8FCE8E29AFD037006E4CA5 /* index.js */,
+				FA8FCE8029AE20F0006E4CA5 /* amplify */,
+				FA8FCE7C29AE20E6006E4CA5 /* amplify-build-config.json */,
+				FA8FCE8229AE20F4006E4CA5 /* App.js */,
+				FA8FCE7F29AE20EB006E4CA5 /* app.json */,
+				FA8FCE7D29AE20E8006E4CA5 /* assets */,
+				FA8FCE8329AE20F7006E4CA5 /* babel.config.js */,
+				FA8FCE7E29AE20EA006E4CA5 /* node_modules */,
+				FA8FCE8129AE20F2006E4CA5 /* package-lock.json */,
+				FA8FCE7A29AE20E2006E4CA5 /* package.json */,
+				FA8FCE7B29AE20E4006E4CA5 /* src */,
 				FA8FCE4F29AE2085006E4CA5 /* Todo */,
 				FA8FCE6029AE2090006E4CA5 /* TodoTests */,
 				FA8FCE6A29AE2090006E4CA5 /* TodoUITests */,
@@ -232,7 +265,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8FCE5829AE2090006E4CA5 /* Preview Assets.xcassets in Resources */,
+				FA8FCE8929AE20F9006E4CA5 /* app.json in Resources */,
 				FA8FCE5529AE2090006E4CA5 /* Assets.xcassets in Resources */,
+				FA8FCE8429AE20F9006E4CA5 /* package.json in Resources */,
+				FA8FCE8829AE20F9006E4CA5 /* node_modules in Resources */,
+				FA8FCE8729AE20F9006E4CA5 /* assets in Resources */,
+				FA8FCE8A29AE20F9006E4CA5 /* amplify in Resources */,
+				FA8FCE8B29AE20F9006E4CA5 /* package-lock.json in Resources */,
+				FA8FCE8D29AE20F9006E4CA5 /* babel.config.js in Resources */,
+				FA8FCE8C29AE20F9006E4CA5 /* App.js in Resources */,
+				FA8FCE8629AE20F9006E4CA5 /* amplify-build-config.json in Resources */,
+				FA8FCE8529AE20F9006E4CA5 /* src in Resources */,
+				FA8FCE8F29AFD039006E4CA5 /* index.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
